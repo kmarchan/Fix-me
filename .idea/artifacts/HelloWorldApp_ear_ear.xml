@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="ear" name="HelloWorldApp-ear:ear">
-    <output-path>$PROJECT_DIR$/FixMe/HelloWorldApp-ear/target</output-path>
+    <output-path>$PROJECT_DIR$/HelloWorldApp-ear/target</output-path>
     <properties id="maven-jee-properties">
       <options>
         <module>HelloWorldApp-ear</module>
