@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fix-me.iml" filepath="$PROJECT_DIR$/.idea/Fix-me.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FixMe/FixMeModule.iml" filepath="$PROJECT_DIR$/FixMe/FixMeModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FixMe/HelloWorldApp-ear/HelloWorldApp-ear.iml" filepath="$PROJECT_DIR$/FixMe/HelloWorldApp-ear/HelloWorldApp-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FixMe/HelloWorldApp-rws/HelloWorldApp-rws.iml" filepath="$PROJECT_DIR$/FixMe/HelloWorldApp-rws/HelloWorldApp-rws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FixMe/HelloWorldApp-service/HelloWorldApp-service.iml" filepath="$PROJECT_DIR$/FixMe/HelloWorldApp-service/HelloWorldApp-service.iml" />
+    </modules>
+  </component>
+</project>

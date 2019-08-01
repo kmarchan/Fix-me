@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HelloWorldApp-rws:war">
+    <output-path>$PROJECT_DIR$/FixMe/HelloWorldApp-rws/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>HelloWorldApp-rws</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="HelloWorldApp-rws.war">
+      <element id="artifact" artifact-name="HelloWorldApp-rws:war exploded" />
+    </root>
+  </artifact>
+</component>

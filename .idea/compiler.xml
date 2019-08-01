@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="HelloWorldApp-ear" />
+        <module name="HelloWorldApp-service" />
+        <module name="HelloWorldApp-rws" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="FixMeModule" target="1.8" />
+      <module name="HelloWorldApp-ear" target="1.8" />
+      <module name="HelloWorldApp-rws" target="1.8" />
+      <module name="HelloWorldApp-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="FixMeModule" options="-parameters" />
+      <module name="HelloWorldApp-ear" options="-parameters" />
+      <module name="HelloWorldApp-rws" options="-parameters" />
+      <module name="HelloWorldApp-service" options="-parameters" />
+    </option>
+  </component>
+</project>
