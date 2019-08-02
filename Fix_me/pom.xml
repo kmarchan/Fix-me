@@ -10,7 +10,9 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<modules>
-		<module>Simple</module>
+		<module>Broker</module>
+		<module>Router</module>
+		<module>Market</module>
 	</modules>
 
 	<properties>

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Fix_me/Broker/Broker.iml" filepath="$PROJECT_DIR$/Fix_me/Broker/Broker.iml" />
       <module fileurl="file://$PROJECT_DIR$/FixMe/FixMeModule.iml" filepath="$PROJECT_DIR$/FixMe/FixMeModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fix_me/Fix_me.iml" filepath="$PROJECT_DIR$/Fix_me/Fix_me.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorldApp-ear/HelloWorldApp-ear.iml" filepath="$PROJECT_DIR$/HelloWorldApp-ear/HelloWorldApp-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorldApp-rws/HelloWorldApp-rws.iml" filepath="$PROJECT_DIR$/HelloWorldApp-rws/HelloWorldApp-rws.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorldApp-service/HelloWorldApp-service.iml" filepath="$PROJECT_DIR$/HelloWorldApp-service/HelloWorldApp-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Fix_me/Simple/Simple.iml" filepath="$PROJECT_DIR$/Fix_me/Simple/Simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fix_me/Market/Market.iml" filepath="$PROJECT_DIR$/Fix_me/Market/Market.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fix_me/Router/Router.iml" filepath="$PROJECT_DIR$/Fix_me/Router/Router.iml" />
     </modules>
   </component>
 </project>
