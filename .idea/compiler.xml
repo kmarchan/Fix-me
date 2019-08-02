@@ -10,14 +10,17 @@
         <module name="HelloWorldApp-service" />
         <module name="HelloWorldApp-ear" />
         <module name="HelloWorldApp-rws" />
+        <module name="Simple" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Fix-me" target="1.8" />
+      <module name="Fix_me" target="1.8" />
       <module name="FixMeModule" target="1.8" />
       <module name="HelloWorldApp-ear" target="1.8" />
       <module name="HelloWorldApp-rws" target="1.8" />
       <module name="HelloWorldApp-service" target="1.8" />
+      <module name="Simple" target="1.8" />
       <module name="testModule" target="1.8" />
     </bytecodeTargetLevel>
   </component>
