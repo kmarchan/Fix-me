@@ -7,11 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HelloWorldApp-rws" />
-        <module name="HelloWorldApp-ear" />
         <module name="Router" />
         <module name="Market" />
-        <module name="HelloWorldApp-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
