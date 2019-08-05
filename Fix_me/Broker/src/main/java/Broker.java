@@ -1,10 +1,8 @@
-package Fix_Me;
-
 /**
  * Hello world!
  *
  */
-public class App 
+public class Broker
 {
     public static void main( String[] args )
     {

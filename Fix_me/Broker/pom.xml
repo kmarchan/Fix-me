@@ -9,12 +9,14 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>fix_me_Simple</artifactId>
-	<properties>
+	<artifactId>Broker</artifactId>
+	<packaging>pom</packaging>
 
+	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -27,7 +29,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>Fix_Me.App</mainClass>
+							<mainClass>Broker</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -46,7 +48,8 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>Fix_Me.App</mainClass>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>Broker</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

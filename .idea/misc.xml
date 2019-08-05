@@ -17,6 +17,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Fix_me/Broker/Market/pom.xml" />
         <option value="$PROJECT_DIR$/testModule/pom.xml" />
       </set>
     </option>
