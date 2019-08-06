@@ -10,12 +10,6 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>Broker</artifactId>
-	<packaging>pom</packaging>
-
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
 
 	<build>
 		<plugins>
@@ -48,7 +42,6 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
 							<mainClass>Broker</mainClass>
 						</manifest>
 					</archive>
@@ -59,14 +52,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-		<dependencies>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>3.8.1</version>
-			</dependency>
-		</dependencies>
-
 </project>
-

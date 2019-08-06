@@ -42,7 +42,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>Router</mainClass>
+                            <mainClass>Market</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
