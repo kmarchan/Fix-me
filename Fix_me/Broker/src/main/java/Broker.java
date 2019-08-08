@@ -22,11 +22,11 @@ public class Broker {
 				echoString = scanner.nextLine();
 
 				stringToEcho.println(echoString);
-				if(!echoString.equals(ANSI_PURPLE + "exit")) {
+				if(!echoString.equals("exit")) {
 					response = echoes.readLine();
 					System.out.println(response);
 				}
-			} while(!echoString.equals(ANSI_PURPLE + "exit"));
+			} while(!echoString.equals("exit"));
 
 		} catch (IOException e) {
 			System.out.println(ANSI_PURPLE + "Client Error: " + e.getMessage());

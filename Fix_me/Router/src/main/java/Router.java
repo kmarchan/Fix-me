@@ -11,21 +11,10 @@ public class Router {
 	static final int marketPort = 5001;
 	public static void main(String[] args) {
 		try(ServerSocket serverSocket = new ServerSocket(brokerPort)) {
-			Socket socket = serverSocket.accept();
-			System.out.println(ANSI_CYAN + "Client Connected");
-			BufferedReader input = new BufferedReader(
-					new InputStreamReader(socket.getInputStream()));
-			PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
-
 			while(true) {
-				String echoString = input.readLine();
-				if(echoString.equals(ANSI_CYAN + "exit")) {
-					break;
-				}
-				output.println(ANSI_CYAN + "Echo from server: " + echoString);
+				System.out.println(ANSI_CYAN + "Client Connected");
+				new Async(serverSocket.accept()).start();
 			}
-
-
 		} catch(IOException e) {
 			System.out.println(ANSI_CYAN + "Server exception " + e.getMessage());
 		}
