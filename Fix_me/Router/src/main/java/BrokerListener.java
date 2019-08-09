@@ -1,14 +1,14 @@
-import java.net.Socket;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.Socket;
 
-public class Async extends Thread{
+public class BrokerListener extends Thread {
 	public static final String ANSI_CYAN = "\u001B[36m";
 	private Socket socket;
 
-	public Async(Socket socket) {
+	public BrokerListener(Socket socket) {
 		this.socket = socket;
 	}
 
@@ -34,6 +34,5 @@ public class Async extends Thread{
 				// Oh, well!
 			}
 		}
-
 	}
 }
