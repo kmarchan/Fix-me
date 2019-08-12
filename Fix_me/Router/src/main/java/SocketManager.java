@@ -1,24 +1,32 @@
+import lombok.Getter;
+import lombok.Setter;
+
 import java.net.Socket;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.time.Instant;
 
-public class Listener extends Thread{
-	public static final String ANSI_CYAN = "\u001B[36m";
+public class SocketManager extends Thread{
 	private Socket socket;
+	@Getter @Setter
+	private String clientId;
 
-	public Listener(Socket socket) {
+	SocketManager(Socket socket) {
+		System.out.println("port" + socket.getPort());
 		this.socket = socket;
+		String epochString = String.valueOf(Instant.now().toEpochMilli());
+		this.clientId = (socket.getPort() == 5000? "0":"1") + epochString.substring(8);
+		System.out.println("\u001B[36mID: "+ clientId);
 	}
 
 	@Override
 	public void run() {
 		portThread(socket);
-
 	}
 
-	static void portThread(Socket socket) {
+	private static void portThread(Socket socket) {
 		String ANSI_CYAN = "\u001B[36m";
 		try {
 			BufferedReader input = new BufferedReader(
@@ -37,7 +45,7 @@ public class Listener extends Thread{
 			try {
 				socket.close();
 			} catch(IOException e) {
-				// Oh, well!
+				// TODO catch?
 			}
 		}
 	}

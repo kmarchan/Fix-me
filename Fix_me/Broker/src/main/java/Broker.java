@@ -6,7 +6,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Broker {
-	public static final String ANSI_PURPLE = "\u001B[35m";
+	private static final String ANSI_PURPLE = "\u001B[35m";
 	public static void main(String[] args) {
 		try (Socket socket = new Socket("localhost", 5000)) {
 			BufferedReader echoes = new BufferedReader(
