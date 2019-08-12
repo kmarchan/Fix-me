@@ -9,14 +9,14 @@ public class Router {
 	public static void main(String[] args) {
 		while (true) {
 			try (ServerSocket serverSocket = new ServerSocket(brokerPort)) {
-				System.out.println(ANSI_CYAN + "Broker Connected");
 				new SocketManager(serverSocket.accept()).start();
+				System.out.println(ANSI_CYAN + "Broker Connected");
 			} catch (IOException e) {
 				System.out.println(ANSI_CYAN + " Server exception " + e.getMessage());
 			}
 			try (ServerSocket serverSocket = new ServerSocket(marketPort)) {
-				System.out.println(ANSI_CYAN + "Market Connected");
 				new SocketManager(serverSocket.accept()).start();
+				System.out.println(ANSI_CYAN + "Market Connected");
 			} catch (IOException e) {
 				System.out.println(ANSI_CYAN + " Server exception " + e.getMessage());
 			}
