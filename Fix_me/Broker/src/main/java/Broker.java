@@ -29,7 +29,7 @@ public class Broker {
 			} while(!echoString.equals("exit"));
 
 		} catch (IOException e) {
-			System.out.println(ANSI_PURPLE + "Client Error: " + e.getMessage());
+			System.out.println(ANSI_PURPLE + "Broker Client Error: " + e.getMessage());
 
 		}
 	}

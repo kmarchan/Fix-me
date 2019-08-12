@@ -6,21 +6,20 @@ public class Router {
 	static final int brokerPort = 5000;
 	static final int marketPort = 5001;
 
-	// if (MarketPort) {
-	// call MarketListener
-	// }
-	// else if (BrokerPort) {
-	// 	new MarketListener(serverSocket.accept()).start();
-	// }
-
 	public static void main(String[] args) {
-		try(ServerSocket serverSocket = new ServerSocket(brokerPort)) {
-			while(true) {
-				System.out.println(ANSI_CYAN + "Client Connected");
-				new BrokerListener(serverSocket.accept()).start();
+		while (true) {
+			try (ServerSocket serverSocket = new ServerSocket(brokerPort)) {
+				System.out.println(ANSI_CYAN + "Broker Connected");
+				new Listener(serverSocket.accept()).start();
+			} catch (IOException e) {
+				System.out.println(ANSI_CYAN + " Server exception " + e.getMessage());
 			}
-		} catch(IOException e) {
-			System.out.println(ANSI_CYAN + "Server exception " + e.getMessage());
+			try (ServerSocket serverSocket = new ServerSocket(marketPort)) {
+				System.out.println(ANSI_CYAN + "Market Connected");
+				new Listener(serverSocket.accept()).start();
+			} catch (IOException e) {
+				System.out.println(ANSI_CYAN + " Server exception " + e.getMessage());
+			}
 		}
 	}
 }

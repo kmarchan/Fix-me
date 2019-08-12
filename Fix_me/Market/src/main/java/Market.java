@@ -30,7 +30,7 @@ public class Market {
 			} while (!echoString.equals("exit"));
 
 		} catch (IOException e) {
-			System.out.println(ANSI_BLUE + "Client Error: " + e.getMessage());
+			System.out.println(ANSI_BLUE + "Market Client Error: " + e.getMessage());
 
 		}
 	}

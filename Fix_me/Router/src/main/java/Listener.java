@@ -1,19 +1,25 @@
+import java.net.Socket;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.Socket;
 
-public class BrokerListener extends Thread {
+public class Listener extends Thread{
 	public static final String ANSI_CYAN = "\u001B[36m";
 	private Socket socket;
 
-	public BrokerListener(Socket socket) {
+	public Listener(Socket socket) {
 		this.socket = socket;
 	}
 
 	@Override
 	public void run() {
+		portThread(socket);
+
+	}
+
+	static void portThread(Socket socket) {
+		String ANSI_CYAN = "\u001B[36m";
 		try {
 			BufferedReader input = new BufferedReader(
 					new InputStreamReader(socket.getInputStream()));
